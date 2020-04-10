@@ -24,7 +24,7 @@ class MealDetailScreen extends StatelessWidget {
       ),
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(10),
-      height: 150,
+      height: 250,
       width: 300,
       child: child,
     );
@@ -49,7 +49,7 @@ class MealDetailScreen extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            buildSectionTitle(context, 'Ingredients'),
+            buildSectionTitle(context, 'Ingredienti'),
             buildContainer(
               ListView.builder(
                 itemBuilder: (ctx, index) => Card(

@@ -1,9 +1,11 @@
-import 'package:f/screens/meal_detail_screen.dart';
+import 'package:f/screens/filters_screen.dart';
 import 'package:flutter/material.dart';
 
+import './screens/meal_detail_screen.dart';
+import './screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/categories_screen.dart';
-import './screens/meal_detail_screen.dart';
+import 'screens/filters_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,9 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fanstasticibo',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.green,
         accentColor: Colors.amber,
-        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        canvasColor: Colors.white,
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
             body1: TextStyle(
@@ -31,9 +33,10 @@ class MyApp extends StatelessWidget {
             )),
       ),
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FilterScreen.routeName: (ctx) => FilterScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(builder: (ctx) => CategoriesScreen());

@@ -1,4 +1,4 @@
-#Mon Apr 06 18:51:15 CEST 2020
+#Fri Apr 10 18:45:16 CEST 2020
 base.0=C\:\\Users\\nnoù\\Documents\\Progetti\\flatter-app-5\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
